@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect(
-    <redacted>,
+    "insert_clustor_conn_here",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
