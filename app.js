@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect(
-    "mongodb+srv://admin-marko:marko123@cluster0.7x6rl.mongodb.net/todolistDB",
+    <redacted>,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -138,6 +138,6 @@ app.post("/delete", (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Sever started on port 3000");
 });
